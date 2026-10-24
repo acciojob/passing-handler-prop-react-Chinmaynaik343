@@ -1,13 +1,12 @@
-
 import React, { useState } from "react";
 
-const Selection = ({ applyColor }) => {
+const Selection = (props) => {
   const [selectionStyle, updateSelectionStyle] = useState({
     background: "",
   });
 
   const handleClick = () => {
-    applyColor(updateSelectionStyle);
+    props.applyColor(updateSelectionStyle);
   };
 
   return (
@@ -20,4 +19,3 @@ const Selection = ({ applyColor }) => {
 };
 
 export default Selection;
-

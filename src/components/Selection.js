@@ -10,7 +10,7 @@ const Selection = (props) => {
       style={selectionStyle}
       onClick={() => applyColor(updateSelectionStyle)}
     >
-      <h2 className="sub-header">Selection</h2>
+      {/* Optional: sub-text if required by your template */}
     </div>
   );
 };

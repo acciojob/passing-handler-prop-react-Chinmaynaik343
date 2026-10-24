@@ -1,1 +1,23 @@
 
+import React, { useState } from "react";
+
+const Selection = ({ applyColor }) => {
+  const [selectionStyle, updateSelectionStyle] = useState({
+    background: "",
+  });
+
+  const handleClick = () => {
+    applyColor(updateSelectionStyle);
+  };
+
+  return (
+    <div
+      className="fix-box"
+      style={{ background: selectionStyle.background }}
+      onClick={handleClick}
+    ></div>
+  );
+};
+
+export default Selection;
+
